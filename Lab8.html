@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min1.js"></script>
+    <script src="Lab8.js"></script>
+    <style>
+        body {
+            background: url("train.jpg") no-repeat center center fixed;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: rgb(10, 143, 121);
+        }
+        
+        td {
+            border: 1px solid blue;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        th {
+            border: 1px solid red;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        table {
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body ng-app="Myuser">
+    <h1>User Details</h1>
+    <div ng-controller="userCtrl">
+        Rows to Display:<input type="number" step="1" min="0" max="6" ng-model="rowlimit" /><br><br> Search:
+        <input type="text" placeholder="Search User" ng-model="search"><br><br> Enter the Number of characters:<input type="text" ng-model="limit" /><br><br>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email-id</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Address</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="user in users|limitTo:rowlimit|filter:search|orderBy:SortOrder">
+                    <td>{{user.name|myfilter:limit}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.dob|date:"dd/MM/yyyy"}}</td>
+                    <td>{{user.gender|lowercase}}</td>
+                    <td>{{user.location|uppercase}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
