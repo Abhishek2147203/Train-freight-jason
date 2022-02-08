@@ -1,10 +1,10 @@
 {
-    "users": [
-        { "name": "Abhishek", "email": "abhishek@mca.christuniversity.in", "gender": "Male", "location": "Bangalore" },
-        { "name": "Supriya", "email": "supriya@gamil.com", "gender": "Female", "location": "Bangalore" },
-        { "name": "Utkarsh Razz", "email": "utkarsh@gamil.com", "gender": "Male", "location": "Bangalore" },
-        { "name": "Ayushi", "email": "ayushi@gamil.com", "gender": "Female", "location": "Bangalore" },
-        { "name": "Aryan Raj", "email": "aryan@gamil.com", "gender": "Male", "location": "Bangalore" },
-        { "name": "Santosh", "email": "santosh@gamil.com", "gender": "Female", "location": "Bangalore" }
+    "records": [
+        { "id": 1, "name": "Abhishek", "gender": "Male", "salary": 50000 },
+        { "id": 2, "name": "Supriya", "gender": "FeMale", "salary": 750000 },
+        { "id": 3, "name": "Utkarsh Razz", "gender": "Male", "salary": 200000 },
+        { "id": 4, "name": "Ayushi", "gender": "FeMale", "salary": 100000 },
+        { "id": 5, "name": "Aryan Raj", "gender": "Male", "salary": 20000 },
+        { "id": 6, "name": "Santosh", "gender": "Male", "salary": 30000 }
     ]
 }
