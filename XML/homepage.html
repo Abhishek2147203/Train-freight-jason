@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Holiday Planning and Tourism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: white;
+        }
+        
+        header {
+            background-color: black;
+            height: 60px;
+            display: flexbox;
+            z-index: 0;
+        }
+        
+        header .navbar {
+            display: flexbox;
+        }
+        
+        header .navbar ul {
+            display: flex;
+        }
+        
+        header .navbar ul li {
+            display: flex;
+            list-style: none;
+        }
+        
+        header .navbar ul li a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            padding: 20px;
+        }
+        
+        header .navbar ul li a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+        }
+        
+        #login {
+            margin-left: 750px;
+            background-color: violet;
+            color: black;
+        }
+        
+        #login:hover {
+            background-color: white;
+            border-radius: 20px;
+        }
+        
+        .container img {
+            width: 1440px;
+            height: 600px;
+        }
+        
+        .container p {
+            font-size: 7vh;
+            color: white;
+            margin-top: -350px;
+            margin-left: 30px;
+        }
+        
+        .container-2 h2 {
+            margin-top: 350px;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-size: 7vh;
+        }
+        
+        .container-2 .cont img {
+            display: flexbox;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 400px;
+            margin-top: 20px;
+            padding: 30px;
+            margin-left: 50px;
+        }
+        
+        .container-2 .names {
+            display: flexbox;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: black;
+            height: 100px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        
+        .container-2 .names ul {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+        
+        .container-2 .names ul li {
+            display: flex;
+            align-items: center;
+        }
+        
+        .container-2 .names ul li a {
+            text-decoration: none;
+            list-style: none;
+            padding: 30px;
+            font-size: 3vh;
+            align-items: center;
+            margin-left: 20px;
+            color: orange;
+        }
+        
+        .container-2 .names ul li a:hover {
+            background-color: orange;
+            color: white;
+        }
+        
+        .cont-vid {
+            display: flexbox;
+            padding: 30px;
+            margin-left: 100px;
+        }
+        
+        .cont-vid iframe {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body onload="checkCookie()">
+    <header>
+        <form>
+            <input type="button" value="Delete" onclick="delete_cookie()" /><br>
+        </form>
+        <div class="navbar">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="packages2.html">Packages</a></li>
+                <li><a href="#">Special Trains</a></li>
+                <li><a href="#">Services</a></li>
+                <li id="login"><a href="userregistration.html">Register</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <img src="ankush-minda-7KKQG0eB_TI-unsplash.jpg" alt="train image">
+        <p>Plan Your Vacation With Us...</p>
+    </div>
+    <div class="container-2">
+        <h2>Our top locations</h2>
+        <div class="cont">
+            <img src="jack-ward-rknrvCrfS1k-unsplash.jpg" alt="Jaipur">
+            <img src="kris-guico-rsB-he-ye7w-unsplash.jpg" alt="Goa">
+            <img src="luca-bravo-O453M2Liufs-unsplash.jpg" alt="Ladakh">
+            <img src="rolands-varsbergs-miKmVyq3qhE-unsplash.jpg" alt="Kerala">
+            <img src="satyaprakash-kumawat-ky1d-IWCBis-unsplash.jpg" alt="Bangalore">
+            <img src="suchismita-sahoo-aEO1tuMpqb8-unsplash.jpg" alt="Odisha">
+            <img src="thebugadi-HsvegYJYLjY-unsplash.jpg" alt="Amarnath">
+            <img src="surya-teja-oIXJ839p55k-unsplash.jpg" alt="Manali">
+            <img src="naman-pandey-y3nWJ-QznP4-unsplash.jpg" alt="Shimla">
+        </div>
+        <div class="names">
+            <ul>
+                <li><a href="https://www.tourism.rajasthan.gov.in/jaipur.html">Jaipur</a></li>
+                <li><a href="https://goa-tourism.com/">Goa</a></li>
+                <li><a href="https://www.tripadvisor.in/Tourism-g297624-Ladakh_Jammu_and_Kashmir-Vacations.html">Ladakh</a>
+                </li>
+                <li><a href="https://www.keralatourism.org/">Kerala</a></li>
+                <li><a href="https://www.britannica.com/place/Bangalore-India">Bangalore</a></li>
+                <li><a href="https://ecoretreat.odishatourism.gov.in/en.html?url=ecoretreat">Odisha</a></li>
+                <li><a href="http://www.shriamarnathjishrine.com/">Amarnath</a></li>
+                <li><a href="https://www.tourism-of-india.com/manali/">Manali</a></li>
+                <li><a href="https://www.tripadvisor.in/Tourism-g304552-Shimla_Shimla_District_Himachal_Pradesh-Vacations.html">Shimla</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cont-vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QkBMI5m64uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jYLXQWVpDYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vydEu1I9r5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AkC90RMaQYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VEPZkPhRwmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ecGI4wBE1HY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKHrvTO32M0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FxXXHglhCTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let user = getCookie("username");
+            if (user != "") {
+                alert("Welcome again " + user);
+            } else {
+                user = prompt("Please enter your name:", "");
+                if (user != "" && user != null) {
+                    setCookie("username", user, 30);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Campus Visit</title>
+    <script>
+        var name1 = document.getElementById('name');
+        var email = document.getElementById('email');
+        name1.onkeydown = function() {
+            var nameregex = /^[a-zA-Z\-]+$/;
+            var uname = document.getElementById('name').value;
+            document.getElementById('name').focus();
+            if (uname == null || uname == null) {
+                span[0].innerText = "Name can'nt be blank";
+                span[0].style.color = "red";
+            } else if (uname.length < 8) {
+
+                span[0].innerText = "Name can'nt be less than 8 character";
+                span[0].style.color = "red";
+            } else if (nameregex.test(uname)) {
+                span[0].innerText = "your name is perfect!";
+                span[0].style.color = "lime";
+            } else if (/^[a-zA-Z0-9\-]+$/.test(uname)) {
+                span[0].innerText = "your name is invalid";
+                span[0].style.color = "red";
+            } else {
+                span[0].innerText = "Your name is Valid";
+                span[0].style.color = "lime";
+            }
+        }
+        email.onkeydown = function() {
+            const regex1 = /^[a-z]+@([a-z]+)\.([a-z]{10,16})+\.[a-z]{1,2}$/;
+
+            if (regex1.test(email.value)) {
+                span[2].innerText = "Your Email is Valid";
+                span[2].style.color = "lime";
+            } else {
+                span[2].innerText = "Invalid Email Id";
+                span[2].style.color = "red";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="std_details" method="post">
+        <label>Name:</label>
+        <input type="text" id="name" size="50"><br>
+        <span></span><br><br>
+        <label>Address</label>
+        <textarea height="5" width="50"></textarea><br><br>
+        <label>Email</label>
+        <input type="email" id="email" /><span></span><br><br>
+        <br><br> What are things that you like:
+
+        <ul>
+            <li><input type="checkbox" name="camp">Campus</li>
+            <li><input type="checkbox" name="camp">Location</li>
+            <li><input type="checkbox" name="camp">Student</li>
+
+
+
+            <li><input type="checkbox" name="camp">Atmosphere</li>
+            <li><input type="checkbox" name="camp">Dorm Room</li>
+            <li><input type="checkbox" name="camp">Sport</li>
+        </ul><br> How to became interested in university:<br><br>
+        <ul>
+            <li><input type="radio" name="iu">Friends</li>
+            <li><input type="radio" name="iu">Television</li>
+            <li><input type="radio" name="iu">Internet</li>
+            <li><input type="radio" name="iu">Others</li>
+        </ul>
+        <br> Comment
+        <br><br>
+        <textarea height="5" width="50"></textarea><br>
+        <button>Submit</button>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <style>
+        .makeRed {
+            border: 2px solid red !important;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+
+            $(".login-btn").click(function() {
+                var user = $("#user").val();
+                var pwd = $("#pwd").val();
+
+                if (!user) {
+
+                    $("#user").addClass("makeRed");
+                } else {
+                    $("#user").removeClass("makeRed");
+                }
+                if (!pwd) {
+
+                    $("#pwd").addClass("makeRed");
+                } else {
+                    $("#pwd").removeClass("makeRed");
+                }
+            });
+            $("#user").click(function() {
+                $("#user").removeClass("makeRed");
+
+            });
+            $("#pwd").click(function() {
+                $("#pwd").removeClass("makeRed");
+
+            });
+        });
+    </script>
+    <form action="?php echo base_url(); ?>profile/add_profile" method="post">
+        <input id="user" type="text" />
+        <input id="pwd" type="text" />
+        <input type="file" class="form-control modalcontrol" name="profile_img" id="profile_img" required>
+        <span class="fileuploadlabl">Upload</span>
+        <div class="login-btn">
+            <button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Christ UNiversity
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <style>
+        body {
+            background: url("CHRISTUNIVERSITY3.JPG.png") no-repeat center center fixed;
+        }
+        
+        section {
+            margin: 0 auto;
+            width: 50%;
+            background: rgba(0, 0, 0, .5);
+            padding: 50px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+            color: rgb(230, 129, 15);
+        }
+        
+        div {
+            width: 60%;
+            margin: 15px auto;
+            text-align: left;
+            margin-left: 0ch;
+        }
+        
+        label {
+            display: block;
+            padding: 20px;
+            font-size: 25px;
+        }
+        
+        input {
+            width: 96%;
+            padding: 10px;
+            border: 1px red;
+            margin-left: 20px;
+            border-radius: 3px;
+        }
+        
+        span {
+            display: block;
+            margin-left: 20px;
+            color: rgb(230, 129, 15);
+            ;
+            font-style: italic;
+        }
+        
+        .Radio {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        .checkbox {
+            display: inline-block;
+        }
+        
+        .checkbox label {
+            display: inline-block;
+        }
+        
+        .MenuOption {
+            text-align: left;
+            margin-left: 20px;
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        .checkbox11 {
+            text-align: center;
+            margin: 20px;
+            padding: 30px;
+        }
+        
+        .checkbox11 button {
+            border-radius: 10px;
+            padding: 10px 40px;
+            color: red;
+            text-align: center;
+            background-color: skyblue;
+            margin-left: 5px;
+        }
+        
+        .checkbox11 input {
+            border-radius: 10px;
+            color: red;
+            text-align: center;
+            background-color: skyblue;
+            width: 150px;
+            padding: 10px;
+        }
+        
+        .ul {
+            list-style-type: square;
+            font-size: 30px;
+            padding: 5px;
+            color: rgb(230, 129, 15);
+            margin-left: 10px;
+        }
+        
+        .address {
+            margin-left: 20px;
+            width: 50%;
+        }
+        
+        p {
+            color: rgb(236, 11, 150);
+            font-size: 30px;
+        }
+        
+        span {
+            font-size: 30px;
+        }
+        
+        .select-control {
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <h1 style="text-align: center;">DEPARTMENT OF COMPUTER SCIENCE</h1>
+        <h3 style="text-align: center; text-decoration: underline;">GATEWAYS 2022 Registration Form</h3>
+        <form onsubmit="return validate()" action="">
+
+            <div><br><br>
+                <label for="uname">User_Name</label>
+                <input id="uname" onkeypress="return test(event)" placeholder="UserName" type="text" />
+                <label id="lbuser" style="color: red; visibility: hidden;"></label>
+                <span></span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email-id">
+                <span></span>
+            </div><br>
+            <div>
+                <label for="branch">Branch</label>
+                <select id="brach" class="select-control">
+                        <option>Select a Branch</option>
+                        <option>MCA</option>
+                        <option>DataScience</option>
+                        <option>Msc</option>
+                        <option>PHD</option>
+                        <option>Computer Science</option>
+                      </select>
+                <div class="select_arrow"></div>
+            </div>
+            <div>
+                <label for="College">College/University</label>
+                <input type="text" id="college" placeholder="College/University Name">
+                <span></span>
+            </div>
+            <div>
+                <label for="State">State</label>
+                <select id="state" class="select-control">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    </select>
+            </div>
+            <div class="address">
+                <label style="margin-left: -17px;">Address</label>
+                <textarea height="-5" width="50%"></textarea><br>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" onkeypress="return number(event)" id="age" placeholder="Age" min="0" max="50">
+                <span></span>
+            </div>
+            <div>
+                <label for="number">Phone-Number</label>
+                <input type="number" id="number" placeholder="Phone-Number">
+                <span></span>
+            </div>
+            <div><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <span></span>
+            </div>
+            <div><br>
+                <label for="password">ReType-Password</label>
+                <input type="password" id="password2" placeholder="Retype_Password">
+                <span></span>
+            </div>
+
+
+            <div class="checkbox11">
+                <button class="btn" onsubmit="storeValues(form)">Sign_Up</button>
+                <input class="checkbox11" type="reset" value="Reset">
+            </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
+<script>
+    var username = document.getElementById('uname');
+    var email = document.getElementById('email');
+    var number = document.getElementById('number');
+    var span = document.getElementsByTagName('span');
+    var password = document.getElementById('password');
+    var password1 = document.getElementById('password2');
+    var Age = document.getElementById('age');
+
+    function test(event) {
+        let code = event.which;
+        if (code > 47 && code < 58)
+            return false;
+        else
+            return true;
+    }
+
+    function number(event) {
+        let code = event.which;
+        if (code < 0)
+            return false;
+        else
+            return true;
+    }
+
+
+
+    username.onkeydown = function() {
+        var nameregex = /^[A-Z\-]+[a-z\-]+$/;
+        var uname = document.getElementById('uname').value;
+        if (uname.length < 8) {
+
+            span[0].innerText = "Name can'nt be less than 8 character";
+            span[0].style.color = "red";
+        } else if (nameregex.test(uname)) {
+            span[0].innerText = "your name is perfect!";
+            span[0].style.color = "lime";
+            uname.style.border = "solid 3px lime";
+        } else if (/^[a-zA-Z0-9\-]+$/.test(uname)) {
+            span[0].innerText = "your name is invalid";
+            span[0].style.color = "red";
+        } else {
+            span[0].innerText = "Your name is Valid";
+            span[0].style.color = "lime";
+            uname.style.border = "solid 3px black";
+        }
+    }
+    email.onkeydown = function() {
+        const regex1 = /^[a-z]+@([a-z]+)\.([a-z]{10,16})+\.[a-z]{1,2}$/;
+        if (email.value.trim() == "") {
+            email.style.border = "solid 3px red";
+
+        } else if (regex1.test(email.value)) {
+            email.style.border = "solid 3px green";
+            span[1].innerText = "Your Email is Valid";
+            span[1].style.color = "lime";
+        } else {
+            span[1].innerText = "Invalid Email Id";
+            span[1].style.color = "red";
+        }
+    }
+    number.onkeydown = function() {
+        const regnum = /^[0-9]{10}$/;
+        if (regnum.test(number.value)) {
+            password.style.border = "solid 3px red";
+            span[4].innerText = "Your Number is Valid";
+            span[4].style.color = "lime";
+        } else {
+            span[4].innerText = "Invalid Phone Number";
+            span[4].style.color = "red";
+            password.style.border = "solid 0px red";
+        }
+    }
+    password.onkeydown = function() {
+        var pass = document.getElementById('password').value;
+
+        var pass1 = /^[a-zA-Z]{6,12}$/;
+        var pass2 = /^[a-zA-Z0-9]{6,12}$/;
+        var pass3 = /^[A-Z](?=.*[0-9])(?=.*[!@#$%^{}()&*])[a-zA-Z0-9!@#$%{}()^&*]{6,12}$/;
+        if (pass.trim() == "") {
+            password.style.border = "solid 3px red";
+            document.getElementById("lbuser").style.visibility = "visible";
+        } else if (pass.match(pass1)) {
+            span[5].innerText = "Must include Digit(0-9)!";
+            span[5].style.color = "red";
+        } else if (pass.match(pass2)) {
+            span[5].innerText = "Must include special character ~`!@#$%^&*()-_+={}[]|\;:";
+            span[5].style.color = "red";
+        } else if (pass.match(pass3)) { // && pass1.test(pass)) {
+            span[5].innerText = "Strong passsword!";
+            span[5].style.color = "lime";
+            password.style.border = "solid 3px green";
+
+        } else {
+            span[5].innerText = "TRy Something new!";
+            span[5].style.color = "red";
+        }
+
+    }
+    password1.onkeydown = function() {
+        var retype = document.getElementById('password2').value;
+        var pass = document.getElementById('password').value;
+
+        if (pass == retype) {
+            span[6].innerText = "Password Matched";
+            span[6].style.color = "lime";
+        } else {
+            span[6].innerText = "Password Must should be same!";
+            span[6].style.color = "red";
+        }
+    }
+
+    Age.onkeydown = function() {
+        if (Age.value.trim() == "") {
+            Age.style.border = "solid 3px red";
+            span[3].innertext = "Must be field Age";
+            span[3].style.color = "red";
+
+        } else if (Age.value < 0) {
+            span[3].innerText = "Age Must be Positive !";
+            span[3].style.color = "red";
+        } else {
+            span[3].innerText = "Age Sucessfuly Added !";
+            span[3].style.color = "lime";
+            Age.style.border = "solid 3px green";
+        }
+    }
+
+
+    function validate() {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("password");
+        if (username.value.trim() == "") {
+            alert("Blank Username");
+            username.style.border = "solid 3px red";
+            document.getElementById("lbuser").style.visibility = "visible";
+            return false;
+        } else if (email.value.trim() == "") {
+            alert("Blank Email");
+            email.style.border = "solid 3px red";
+            document.getElementById("lbuser").style.visibility = "visible";
+            return false;
+        } else if (password.value.trim() == "") {
+            alert("Blank Password");
+            password.style.border = "solid 3px red";
+            document.getElementById("lbuser").style.visibility = "visible";
+            return false;
+        } else if (Age.value.trim() == "") {
+            alert("Blank Age");
+            password.style.border = "solid 3px red";
+            document.getElementById("lbuser").style.visibility = "visible";
+            return false;
+        }
+
+    }
+    localStorage.setItem(header, "Saurabh")
+</script>
+<script>
+    function action() {
+        localStorage.setItem(header, "Saurabh")
+    }
+
+    function action2() {
+        localStorage.getItem(header, "Saurabh")
+    }
+</script>
+<script type="text/javascript">
+    // Original JavaScript code by Chirp Internet: chirpinternet.eu
+    // Please acknowledge use of this code by including this header.
+
+    var today = new Date();
+    var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000); // plus 30 days
+
+    function setCookie(name, value) {
+        document.cookie = name + "=" + escape(value) + "; path=/; expires=" + expiry.toGMTString();
+    }
+</script>
+<script type="text/javascript">
+    function storeValues(form) {
+        setCookie("username", form.document.getElementById('uname').value);
+        setCookie("field2", form.email.value);
+        setCookie("field3", form.phone.value);
+        setCookie("field4", form.age.value);
+        return true;
+    }
+</script>
+<script type="text/javascript">
+    if (username = getCookie("username")) document.getElementById('uname').value = username;
+    if (field2 = getCookie("field2")) document.myForm.field2.value = field2;
+    if (field3 = getCookie("field3")) document.myForm.field3.value = field3;
+    if (field4 = getCookie("field4")) document.myForm.field4.value = field4;
+</script>

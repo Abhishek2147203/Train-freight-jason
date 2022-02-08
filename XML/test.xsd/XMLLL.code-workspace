@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../MCA_WD-CLASS-main 2/SPA"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "XML"
+	}
+}
